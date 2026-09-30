@@ -1,0 +1,357 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Do clã ao circuito — coaching de Pokémon competitivo</title>
+<meta name="description" content="Coaching para jogadores de PvP do Pixelmon Brasil que querem competir de verdade no Smogon. Com Envy e seraphz. R$ 34,90/mês.">
+<meta name="theme-color" content="#14162B">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:title" content="Do clã ao circuito">
+<meta property="og:description" content="Você já joga Pokémon competitivo. Só que num lugar onde ninguém está olhando.">
+<meta name="twitter:card" content="summary">
+<link rel="preload" href="assets/fonts/bricolage-grotesque-latin-opsz-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/pixelify-sans-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/css/style.css">
+<script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+<a class="skip" href="#conteudo">Pular para o conteúdo</a>
+
+<header class="topo">
+  <div class="hp-scroll" aria-hidden="true"><i></i></div>
+  <div class="wrap topo__in">
+    <a class="marca" href="#inicio">do clã ao <b>circuito</b></a>
+    <nav class="nav" aria-label="Seções">
+      <a href="#ponte">A ponte</a>
+      <a href="#coaches">Coaches</a>
+      <a href="#plano">Plano</a>
+      <a href="#tier">Sua tier</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <a class="btn btn--sm" href="#assinar">Começar</a>
+  </div>
+</header>
+
+<main id="conteudo">
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="inicio">
+  <div class="wrap hero__grid">
+    <div class="hero__copy">
+      <p class="eyebrow"><span class="tag-pxbr">PXBR</span><span class="chev">›</span><span class="tag-smogon">Smogon</span></p>
+      <h1>Você já joga Pokémon competitivo. Só que <em>ninguém está olhando</em>.</h1>
+      <p class="lead">Coaching para quem veio do PvP de clã do Pixelmon Brasil e quer jogar torneio de verdade no Smogon. Em quatro semanas você entra no seu primeiro open — com time construído, replays revisados e sabendo o que está fazendo.</p>
+      <div class="hero__acao">
+        <a class="btn" href="#assinar">Quero começar</a>
+        <a class="btn btn--vazado" href="#ponte">Ver como funciona</a>
+      </div>
+      <div class="hero__quem">
+        <span class="avatares" aria-hidden="true">
+          <img src="assets/img/pfp-envy.webp" alt="" width="96" height="96">
+          <img src="assets/img/pfp-seraphz.webp" alt="" width="96" height="96">
+        </span>
+        <p>Com <b>Envy</b> e <b>seraphz</b> · <b class="ouro">R$ 34,90/mês</b> · cancela quando quiser</p>
+      </div>
+    </div>
+
+    <!-- elemento assinatura: painel de batalha -->
+    <div class="batalha" aria-hidden="true">
+      <div class="batalha__topo">
+        <span class="formato">[Gen 9] Transição</span>
+        <span class="turno" id="turno">turno 1</span>
+      </div>
+      <div class="lado lado--oponente">
+        <div class="lado__nome"><span>o circuito</span><span>100%</span></div>
+        <div class="barra"><i style="width:100%"></i></div>
+      </div>
+      <div class="arena">
+        <span class="vs">VS</span>
+        <div class="slots"><b>?</b><b>?</b><b>?</b><b>?</b><b>?</b><b>?</b></div>
+      </div>
+      <div class="lado">
+        <div class="lado__nome"><span>você</span><span id="hp-voce">100%</span></div>
+        <div class="barra" id="barra-voce"><i style="width:100%"></i></div>
+      </div>
+      <div class="log" id="log"></div>
+      <button class="replay" id="replay" type="button" tabindex="-1">↻ assistir de novo</button>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <dl class="stats">
+      <div><dt>4 semanas</dt><dd>até o seu primeiro open</dd></div>
+      <div><dt>2 coaches</dt><dd>que jogaram a WCoP pelo Brasil</dd></div>
+      <div><dt>1× / semana</dt><dd>revisão gravada dos seus replays</dd></div>
+      <div><dt>0 multa</dt><dd>cancela quando quiser</dd></div>
+    </dl>
+  </div>
+</section>
+
+<!-- ============ 01 PONTE ============ -->
+<section class="secao" id="ponte">
+  <div class="wrap">
+    <header class="cab rev">
+      <p class="eyebrow"><span class="num">01</span> o que você já tem</p>
+      <h2>Metade do trabalho já está feita</h2>
+      <p class="lead">O que você aprendeu jogando clã x clã não é conhecimento de servidor. É habilidade competitiva — e ela tem nome do outro lado.</p>
+    </header>
+
+    <div class="ponte rev">
+      <div class="ponte__cab" aria-hidden="true">
+        <span class="lado-a">No servidor</span><span></span><span class="lado-b">No Smogon</span>
+      </div>
+      <ul>
+        <li><span class="de">Clã x clã</span><span class="seta" aria-hidden="true"></span><span class="para">Team tournaments (SPL, tours de tier)</span></li>
+        <li><span class="de">Interserver</span><span class="seta" aria-hidden="true"></span><span class="para">World Cup of Pokémon</span></li>
+        <li><span class="de">Líder de clã escalando o time</span><span class="seta" aria-hidden="true"></span><span class="para">Manager fazendo draft e escalação</span></li>
+        <li><span class="de">Treino antes da guerra</span><span class="seta" aria-hidden="true"></span><span class="para">Prep e scout do adversário da semana</span></li>
+        <li><span class="de">Ler o que o cara vai trocar</span><span class="seta" aria-hidden="true"></span><span class="para">Predição — vale igual nos dois</span></li>
+        <li><span class="de">Aguentar a final sem tremer</span><span class="seta" aria-hidden="true"></span><span class="para">Bo3 de torneio com gente assistindo</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 02 O QUE NÃO TRANSFERE ============ -->
+<section class="secao secao--dano">
+  <div class="wrap">
+    <header class="cab rev">
+      <p class="eyebrow eyebrow--dano"><span class="num">02</span> o que você não tem</p>
+      <h2>E a outra metade vai doer</h2>
+      <p class="lead">Se alguém te disser que é só entrar no Showdown e jogar, está te vendendo alguma coisa. Três coisas não atravessam a ponte — e você vai reaprender do zero:</p>
+    </header>
+
+    <div class="danos">
+      <article class="dano rev">
+        <div class="dano__hp" aria-hidden="true"><span>mecânica</span><i></i></div>
+        <h3>Mecânica</h3>
+        <p>Pixelmon é uma reimplementação. Interação de habilidade, ordem de efeito e cálculo de dano divergem em pontos suficientes para a sua intuição errar — e errar com confiança, que é pior.</p>
+      </article>
+      <article class="dano rev">
+        <div class="dano__hp" aria-hidden="true"><span>teambuilding</span><i></i></div>
+        <h3>Teambuilding</h3>
+        <p>É a habilidade mais difícil e a menos exportável. Pool fechado de servidor não prepara ninguém para construir contra um metagame que muda todo mês.</p>
+      </article>
+      <article class="dano rev">
+        <div class="dano__hp" aria-hidden="true"><span>o caminho</span><i></i></div>
+        <h3>A parte que ninguém explica</h3>
+        <p>Como funciona tiering, onde ficam os torneios inscrevíveis, o que um manager procura. Isso não é skill, é informação — e é onde a maioria desiste.</p>
+      </article>
+    </div>
+
+    <figure class="compara rev" id="compara">
+      <div class="compara__vista">
+        <img class="compara__img" draggable="false" src="assets/img/print-pixelmon.webp" alt="Batalha PvP no Pixelmon Brasil" width="1200" height="750" loading="lazy">
+        <div class="compara__topo">
+          <img class="compara__img" draggable="false" src="assets/img/print-showdown.webp" alt="Batalha no Pokémon Showdown" width="1200" height="750" loading="lazy">
+        </div>
+        <span class="compara__rotulo compara__rotulo--a">lá · pokémon showdown</span>
+        <span class="compara__rotulo compara__rotulo--b">aqui · pixelmon brasil</span>
+        <span class="compara__linha" aria-hidden="true"><b>‹ ›</b></span>
+      </div>
+      <label class="sr-only" for="compara-range">Comparar Showdown e Pixelmon</label>
+      <input class="compara__range" id="compara-range" type="range" min="0" max="100" value="50">
+      <figcaption>Arraste para comparar. Mesmo jogo, lugares diferentes — e regras que nem sempre batem.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ============ 03 COACHES ============ -->
+<section class="secao" id="coaches">
+  <div class="wrap">
+    <header class="cab rev">
+      <p class="eyebrow"><span class="num">03</span> quem ensina</p>
+      <h2>Dois caras que já fizeram esse caminho</h2>
+      <p class="lead">Currículo no Smogon é público. Pode conferir tudo antes de pagar qualquer coisa.</p>
+    </header>
+
+    <div class="coaches">
+      <article class="coach rev">
+        <div class="coach__topo">
+          <img class="pfp" src="assets/img/pfp-envy.webp" alt="Avatar de Envy" width="96" height="96">
+          <div>
+            <h3>Envy</h3>
+            <p class="papel">little cup · leader</p>
+          </div>
+          <span class="nivel">Lv. 100</span>
+        </div>
+        <ul class="chips">
+          <li class="ouro">LC Leader</li>
+          <li class="ouro">Capitão da WCoP — Brasil</li>
+          <li>Campeão do LC Circuit</li>
+          <li>Campeão LCWC</li>
+          <li>Campeão UWC</li>
+        </ul>
+      </article>
+
+      <article class="coach rev">
+        <div class="coach__topo">
+          <img class="pfp" src="assets/img/pfp-seraphz.webp" alt="Avatar de seraphz" width="96" height="96">
+          <div>
+            <h3>seraphz</h3>
+            <p class="papel">tour player</p>
+          </div>
+          <span class="nivel">Lv. 100</span>
+        </div>
+        <ul class="chips">
+          <li class="ouro">WCoP pelo Brasil</li>
+          <li class="ouro">Campeão UWC</li>
+          <li>Tour player renomado</li>
+          <li>Campeão de vários sidetours</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 04 PLANO ============ -->
+<section class="secao secao--rocha" id="plano">
+  <div class="wrap">
+    <header class="cab rev">
+      <p class="eyebrow"><span class="num">04</span> primeiros 30 dias</p>
+      <h2>O plano é uma sequência, não uma pilha de dicas</h2>
+      <p class="lead">Cada semana tem uma entrega. No fim do mês você não “aprendeu mais” — você está inscrito e jogando.</p>
+    </header>
+
+    <ol class="trilha" id="trilha">
+      <li class="passo rev">
+        <span class="passo__no" aria-hidden="true">1</span>
+        <p class="passo__sem">semana 1</p>
+        <h3>Escolher a tier e parar de errar mecânica</h3>
+        <p>Diagnóstico do seu jogo a partir de replays do servidor, escolha da tier certa para o seu estilo e a lista das divergências de mecânica que mais vão te derrubar no começo.</p>
+        <p class="entrega"><span>entrega</span> tier escolhida + diagnóstico</p>
+      </li>
+      <li class="passo rev">
+        <span class="passo__no" aria-hidden="true">2</span>
+        <p class="passo__sem">semana 2</p>
+        <h3>Construir um time seu</h3>
+        <p>Teambuilding do zero junto com a gente, com o porquê de cada slot. Você sai com um time que entende, não com um import que copiou.</p>
+        <p class="entrega"><span>entrega</span> um time que é seu</p>
+      </li>
+      <li class="passo rev">
+        <span class="passo__no" aria-hidden="true">3</span>
+        <p class="passo__sem">semana 3</p>
+        <h3>Ladder com revisão</h3>
+        <p>Você joga, manda os replays, recebe análise gravada apontando o turno exato onde a partida virou. É aqui que a maior parte da evolução acontece.</p>
+        <p class="entrega"><span>entrega</span> replays revisados</p>
+      </li>
+      <li class="passo rev">
+        <span class="passo__no" aria-hidden="true">4</span>
+        <p class="passo__sem">semana 4</p>
+        <h3>Primeiro torneio</h3>
+        <p>Inscrição acompanhada num open de verdade, prep do primeiro round e alguém do seu lado durante a série. Depois disso o caminho é seu.</p>
+        <p class="entrega entrega--ouro"><span>entrega</span> inscrito e jogando</p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- ============ 05 TIER ============ -->
+<section class="secao" id="tier">
+  <div class="wrap">
+    <header class="cab rev">
+      <p class="eyebrow"><span class="num">05</span> por onde começar</p>
+      <h2>Qual tier combina com o seu jogo</h2>
+      <p class="lead">Como você ganhava as suas guerras no servidor? Escolha o seu golpe.</p>
+    </header>
+
+    <div class="golpes rev">
+      <div class="golpes__menu" id="tier-opts" role="group" aria-label="Seu estilo de jogo">
+        <button class="golpe" type="button" aria-pressed="false" data-t="agressivo" style="--c:var(--dano)"><b>Pressionando desde o turno 1</b><span>ataque</span></button>
+        <button class="golpe" type="button" aria-pressed="false" data-t="controle" style="--c:var(--hp)"><b>Segurando e cansando o outro</b><span>defesa</span></button>
+        <button class="golpe" type="button" aria-pressed="false" data-t="tecnico" style="--c:var(--azul)"><b>Estudando o time antes da guerra</b><span>estratégia</span></button>
+        <button class="golpe" type="button" aria-pressed="false" data-t="caos" style="--c:var(--ouro)"><b>No grito, na leitura, no improviso</b><span>caos</span></button>
+      </div>
+      <div class="golpes__saida" id="tier-saida" aria-live="polite">
+        <p class="espera"><span class="cursor">▌</span>O que você vai fazer?</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ OFERTA ============ -->
+<section class="secao" id="assinar">
+  <div class="wrap">
+    <div class="oferta rev">
+      <div class="oferta__preco">
+        <p class="eyebrow">assinatura mensal</p>
+        <p class="valor">R$ 34,90<small>/mês</small></p>
+        <p class="oferta__eq">cerca de R$ 1,16 por dia</p>
+        <a class="btn btn--grande" href="#" data-checkout>Assinar por R$ 34,90</a>
+        <p class="fina">Pagamento no Pix ou cartão. Cancela quando quiser, sem multa e sem falar com ninguém.</p>
+      </div>
+      <ul class="inclui">
+        <li>Revisão dos seus replays em vídeo gravado, toda semana</li>
+        <li>Teambuilding acompanhado, do zero até o time pronto</li>
+        <li>Call em grupo pequeno a cada 15 dias</li>
+        <li>Acompanhamento na inscrição e no prep do primeiro torneio</li>
+        <li>Acesso ao servidor fechado com os dois coaches</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="secao" id="faq">
+  <div class="wrap faq__grid">
+    <header class="cab rev">
+      <p class="eyebrow"><span class="num">06</span> perguntas</p>
+      <h2>O que costumam perguntar</h2>
+    </header>
+
+    <div class="faq rev">
+      <details>
+        <summary>Isso não é de graça no Discord?</summary>
+        <div><p>Explicação de mecânica e de tier é de graça, sim, e boa. O que não é de graça: alguém assistindo os <em>seus</em> replays e apontando o seu erro, cobrança semanal, e o caminho até um torneio de verdade explicado por quem já jogou. Se você só quer aprender a mecânica, economize o dinheiro — a gente prefere te dizer isso agora.</p></div>
+      </details>
+      <details>
+        <summary>Nunca joguei nada fora do Pixelmon. Serve pra mim?</summary>
+        <div><p>Serve, e é exatamente o público. O que não serve é quem nunca jogou PvP nenhum — aqui a gente parte do princípio de que você já sabe trocar, prever e montar pressão.</p></div>
+      </details>
+      <details>
+        <summary>Quanto tempo até eu jogar torneio de verdade?</summary>
+        <div><p>Um mês para o primeiro open. Ser competitivo nele é outra conversa e depende de quanto você joga. Ninguém aqui vai te prometer resultado em quatro semanas.</p></div>
+      </details>
+      <details>
+        <summary>Sou menor de idade. Consigo assinar?</summary>
+        <div><p>Consegue, com o Pix ou o cartão de um responsável. Se for um problema, fala com a gente antes que a gente resolve.</p></div>
+      </details>
+      <details>
+        <summary>Preciso ter PC bom?</summary>
+        <div><p>Não. O Showdown roda no navegador, inclusive no celular. Para as revisões, só precisa conseguir assistir vídeo.</p></div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA FINAL ============ -->
+<section class="final">
+  <div class="wrap final__in rev">
+    <p class="final__log">› Um jogador selvagem de PXBR apareceu.</p>
+    <h2>Seu primeiro open está a quatro semanas daqui.</h2>
+    <a class="btn btn--grande" href="#assinar">Começar agora</a>
+  </div>
+</section>
+
+</main>
+
+<footer class="rodape">
+  <div class="wrap rodape__in">
+    <p>do clã ao circuito · envy &amp; seraphz</p>
+    <p>não afiliado ao smogon, ao pixelmon brasil ou à nintendo</p>
+  </div>
+</footer>
+
+<div class="barra-cta" id="barra-cta" aria-hidden="true">
+  <p><b>R$ 34,90</b>/mês · cancela quando quiser</p>
+  <a class="btn btn--sm" href="#assinar" tabindex="-1">Começar</a>
+</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>
